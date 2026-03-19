@@ -33,7 +33,7 @@ export default function CTA() {
             Buy $SIGNAL
           </a>
           <a
-            href="https://twitter.com"
+            href="https://x.com/SVoid39442"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-void text-base px-10 py-4"
