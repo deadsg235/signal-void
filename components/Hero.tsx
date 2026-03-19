@@ -55,7 +55,7 @@ export default function Hero() {
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
-            href="https://pump.fun"
+            href="https://pump.fun/coin/AjGg5A77KNHZo3ADkFr4qFSWXnCHPndDCzpm7dqGpump"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-signal"
