@@ -29,8 +29,9 @@ export default function CTA() {
             target="_blank"
             rel="noopener noreferrer"
             className="btn-signal text-base px-10 py-4"
+            onClick={() => console.log("CTA: Buy $VOID button clicked")}
           >
-            Buy $SIGNAL
+            Buy $VOID
           </a>
           <a
             href="https://x.com/SVoid39442"

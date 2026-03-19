@@ -1,5 +1,10 @@
 import type { Metadata } from "next";
-import "./globals.css";
+import "../app/globals.css";
+// Placeholder for Solana Wallet Provider
+function WalletProvider({ children }: { children: React.ReactNode }) {
+  // In a real implementation, this would set up the Solana wallet context
+  return <>{children}</>;
+}
 
 export const metadata: Metadata = {
   title: "SIGNAL//VOID— Tokenized Reputation for On-Chain Intelligence",
@@ -15,7 +20,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <WalletProvider>{children}</WalletProvider>
+      </body>
     </html>
   );
 }

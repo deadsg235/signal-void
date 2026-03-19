@@ -62,7 +62,7 @@ export default function Hero() {
           >
             Launch on pump.fun
           </a>
-          <a href="#signal-score" className="btn-void">
+          <a href="https://github.com/deadsg235/signal-void/blob/main/WHITEPAPER.md" target="_blank" rel="noopener noreferrer" className="btn-void" onClick={() => console.log("Hero: Read the Protocol button clicked")}>
             Read the Protocol
           </a>
         </div>

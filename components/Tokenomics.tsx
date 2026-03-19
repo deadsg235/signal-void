@@ -1,3 +1,5 @@
+import TokenMarketChart from "./TokenMarketChart";
+
 const TIERS = [
   {
     score: "7500+",
@@ -76,6 +78,11 @@ export default function Tokenomics() {
             </div>
           </div>
         </div>
+      </div>
+
+      {/* Token Market Chart */}
+      <div className="mb-12">
+        <TokenMarketChart />
       </div>
 
       {/* Score tiers */}
