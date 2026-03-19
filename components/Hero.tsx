@@ -34,10 +34,8 @@ export default function Hero() {
           Signal Protocol — v1.0
         </p>
 
-        <h1 className="text-5xl md:text-8xl font-bold tracking-tighter mb-4 leading-none">
-          <span className="text-white">DON'T JUST TRADE.</span>
-          <br />
-          <span className="text-signal glow-signal animate-flicker">SIGNAL.</span>
+        <h1 className="text-5xl md:text-8xl font-bold tracking-tighter mb-4 leading-none glitch" data-text="Signal//Void">
+          Signal//Void
         </h1>
 
         <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mt-6 mb-10 leading-relaxed">

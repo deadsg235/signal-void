@@ -9,10 +9,13 @@ import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
 import NoiseCanvas from "@/components/NoiseCanvas";
 
+import InteractiveStars from "@/components/InteractiveStars";
+
 export default function Home() {
   return (
     <>
-      <NoiseCanvas />
+      <InteractiveStars />
+
       <Nav />
       <main>
         <Hero />
