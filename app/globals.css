@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --signal: #00ff88;
+  --void: #ff003c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #050508;
+  color: #e0e0e0;
+  font-family: 'Courier New', monospace;
+  overflow-x: hidden;
+}
+
+/* Scanline overlay */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0, 0, 0, 0.08) 2px,
+    rgba(0, 0, 0, 0.08) 4px
+  );
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.text-signal { color: var(--signal); }
+.text-void { color: var(--void); }
+.border-signal { border-color: var(--signal); }
+.border-void { border-color: var(--void); }
+
+.glow-signal {
+  text-shadow: 0 0 10px var(--signal), 0 0 30px rgba(0,255,136,0.3);
+}
+.glow-void {
+  text-shadow: 0 0 10px var(--void), 0 0 30px rgba(255,0,60,0.3);
+}
+
+.panel {
+  background: #0d0d14;
+  border: 1px solid #1a1a2e;
+}
+
+.btn-signal {
+  background: transparent;
+  border: 1px solid var(--signal);
+  color: var(--signal);
+  padding: 0.75rem 2rem;
+  font-family: 'Courier New', monospace;
+  font-size: 0.875rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.2s;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-signal:hover {
+  background: var(--signal);
+  color: #050508;
+  box-shadow: 0 0 20px rgba(0,255,136,0.4);
+}
+
+.btn-void {
+  background: transparent;
+  border: 1px solid var(--void);
+  color: var(--void);
+  padding: 0.75rem 2rem;
+  font-family: 'Courier New', monospace;
+  font-size: 0.875rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-void:hover {
+  background: var(--void);
+  color: #050508;
+  box-shadow: 0 0 20px rgba(255,0,60,0.4);
+}
+
+.tag {
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.6rem;
+  border: 1px solid currentColor;
+}
